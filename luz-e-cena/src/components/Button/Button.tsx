@@ -6,7 +6,7 @@ type ButtonProps = {
     variant: "default" | "icon";
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-export const Button = ({ children, variant = 'default', ...rest }: ButtonProps) => {
+const Button = ({ children, variant = 'default', ...rest }: ButtonProps) => {
 
     const classMap = {
         default: styles.default,
@@ -19,3 +19,5 @@ export const Button = ({ children, variant = 'default', ...rest }: ButtonProps) 
         </button>
     )
 }
+
+export default Button
